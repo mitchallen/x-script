@@ -5,4 +5,8 @@ HELLO_FACTORY.hello('Yo World!');
 
 ToolsFactory.hello();
 
+ExpressionFactory.hello();
+
+MitchAllen.NamespaceFactory.hello();
+
 

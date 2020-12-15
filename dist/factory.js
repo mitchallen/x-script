@@ -26,3 +26,24 @@ class ToolsFactory {
     console.log(`[tools] ${message}`);
   }
 }
+
+// using a class expression
+
+let ExpressionFactory = class  {
+  static hello(ctx) {
+    ctx = ctx || {};
+    var message = ctx.message || "Hello Expression!";
+    console.log(`[expression] ${message}`);
+  }
+}
+
+let MitchAllen = {}
+
+MitchAllen.NamespaceFactory = class  {
+  static hello(ctx) {
+    ctx = ctx || {};
+    var message = ctx.message || "Hello Namespace!";
+    console.log(`[namespace] ${message}`);
+  }
+}
+
