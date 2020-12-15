@@ -7,5 +7,5 @@ Experimental export scripting
 # Usage
 
 ```html
-TODO
+<script src="https://cdn.jsdelivr.net/gh/mitchallen/x-script/dist/factory.js"></script>
 ```
