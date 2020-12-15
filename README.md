@@ -6,11 +6,13 @@ Experimental export scripting
 
 # Usage
 
+## Serving files from GitHub
+
 ```html
 <script src="https://cdn.jsdelivr.net/gh/mitchallen/x-script/dist/factory.js"></script>
 ```
 
-## Min Version
+## Serving Min Version from GitHub
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/mitchallen/x-script/dist/factory.min.js"></script>
