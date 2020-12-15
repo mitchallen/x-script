@@ -20,7 +20,17 @@ Experimental export scripting
 
 ## Tag and Release
 
-TODO
+```
+git tag v0.1.0
+git push origin --tags
+```
+
+### Reference by tag / version number
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/mitchallen/x-script@0.1.0/dist/factory.min.js"></script>
+
+```
 
 * * * 
 
