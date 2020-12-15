@@ -1,0 +1,13 @@
+{
+  "name": "x-script",
+  "version": "0.1.0",
+  "description": "Experimental export script",
+  "main": "dist/base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web-server": "python -m SimpleHTTPServer $PORT || 8000",
+    "inuse": "lsof -i :8000"
+  },
+  "author": "Mitch Allen",
+  "license": "MIT"
+}
