@@ -1,7 +1,5 @@
 
-// non-exports for CDN distribution
-
-const YO_FACTORY = {
+export const YO_FACTORY = {
   yo: function(ctx) {
     ctx = ctx || {};
     var message = ctx.message || "Hello World!";
@@ -9,7 +7,7 @@ const YO_FACTORY = {
   }
 }
 
-class HELLO_FACTORY {
+export class HELLO_FACTORY {
 
   static hello(ctx) {
     ctx = ctx || {};
@@ -19,7 +17,7 @@ class HELLO_FACTORY {
 
 }
 
-class ToolsFactory {
+export class ToolsFactory {
   static hello(ctx) {
     ctx = ctx || {};
     var message = ctx.message || "Hello Tools!";
@@ -29,7 +27,7 @@ class ToolsFactory {
 
 // using a class expression
 
-let ExpressionFactory = class  {
+export let ExpressionFactory = class  {
   static hello(ctx) {
     ctx = ctx || {};
     var message = ctx.message || "Hello Expression!";
@@ -37,7 +35,7 @@ let ExpressionFactory = class  {
   }
 }
 
-let MitchAllen = {}
+export let MitchAllen = {}
 
 MitchAllen.NamespaceFactory = class  {
   static hello(ctx) {

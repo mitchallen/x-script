@@ -2,12 +2,26 @@
   "name": "x-script",
   "version": "0.1.0",
   "description": "Experimental export script",
-  "main": "dist/base.js",
+  "main": "dist/x-factory.js",
+  "module": "dist/x-factory.module.js",
+  "source": "src/x-factory.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "web-server": "python -m SimpleHTTPServer $PORT || 8000",
-    "inuse": "lsof -i :8000"
+    "inuse": "lsof -i :8000",
+    "preversion": "npm run dist && npm test",
+    "dev": "microbundle watch --globals three=THREE --external three",
+    "dist": "microbundle --globals three=THREE --external three",
+    "version": "git add -A dist",
+    "//postversion": "git push && git push --tags && npm publish"
   },
   "author": "Mitch Allen",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "three": "^0.123.0"
+  },
+  "devDependencies": {
+    "microbundle": "^0.12.4",
+    "three": "^0.123.0"
+  }
 }
